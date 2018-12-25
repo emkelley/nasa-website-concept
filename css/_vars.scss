@@ -1,0 +1,55 @@
+@font-face {
+	font-family: 'GothamPro-Light';
+	src: url('/css/webfont/GothamPro-Light.eot?') format('eot'), 
+	     url('/css/webfont/GothamPro-Light.otf')  format('opentype'),
+	     url('/css/webfont/GothamPro-Light.woff') format('woff'), 
+	     url('/css/webfont/GothamPro-Light.ttf')  format('truetype'),
+	     url('/css/webfont/GothamPro-Light.svg#GothamPro-Light') format('svg');
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700');
+
+
+.z1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.z2 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.z3 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.z4 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.z5 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.has-vertically-aligned-content {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+}
+ 
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+@mixin for-uber-desktop-up {
+  @media (min-width: 2560px) { @content; }
+}
