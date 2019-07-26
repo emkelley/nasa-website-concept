@@ -1,2 +1,4 @@
 Build Out: NASA Website Concept
-https://projects.ericmkelley.com/NASA/
+
+Check out the live version here:
+https://emk.dev/projects/NASA/
